@@ -1,0 +1,67 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 16px;
+  max-width: 860px;
+  padding: 24px;
+
+  &-title {
+    text-align: center;
+  }
+
+  &-inputs {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__input {
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid black;
+      text-align: center;
+      width: 2rem;
+      height: 2rem;
+      font-size: 2rem;
+    }
+  }
+
+  &-numberInput,
+  &-ruleInput {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    &-label {
+      font-size: 1rem;
+    }
+
+    &__input {
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid black;
+      font-size: 1rem;
+    }
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  button {
+    min-width: 4rem;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid black;
+  }
+
+  .error-text {
+    margin-top: 8px;
+    text-align: center;
+    color: red;
+  }
+}
